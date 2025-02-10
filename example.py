@@ -6,7 +6,7 @@ st.title("ChatGPT-like clone")
 # Set OpenAI API key from Streamlit secrets
 #client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 #client = OpenAI(api_key="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")
-client = openai.ChatCompletion.create(
+client = OpenAI.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": "Hello!"}],
     api_key="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"
